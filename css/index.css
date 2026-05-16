@@ -101,7 +101,7 @@ button.navbar-toggler:focus {
 
 .inicio {
     background-image: linear-gradient(rgba(25, 30, 41, 0.7), rgba(25, 30, 41, 0.7)),
-        url(/img/fondo2.jpg);
+        url(../img/fondo2.jpg);
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
