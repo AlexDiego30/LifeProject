@@ -1,0 +1,544 @@
+* {
+    font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
+}
+
+body {
+    background: #191E29;
+    padding-bottom: 80px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background-color: #191E29;
+    border-bottom: 1px solid #00FF7F;
+    transition: background-color 0.3s ease, border-bottom 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar:hover {
+    background-color: #191E29;
+    border-bottom: 1px solid #00FF7F;
+}
+
+.navbar-nav {
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        background-color: #191E29;
+        padding: 12px 0;
+        margin-top: 4px;
+        border-top: 1px solid rgba(0, 255, 127, 0.3);
+        border-radius: 0 0 10px 10px;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid rgba(0, 255, 127, 0.1);
+    }
+
+    .nav-item:last-child {
+        border-bottom: none;
+    }
+
+    #nav-link {
+        display: block;
+        padding: 10px 24px !important;
+        font-size: 1rem;
+    }
+
+    #nav-link:hover {
+        color: #ffffff;
+        background-color: rgba(0, 255, 127, 0.08);
+        padding-left: 30px !important;
+        transition: padding-left 0.2s ease;
+    }
+}
+
+#dacc {
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+}
+
+#nav-link {
+    color: #00FF7F;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#nav-link:hover {
+    color: #ffffff;
+}
+
+#menu {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+}
+
+button.navbar-toggler {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+button.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* ===== BIO HERO ===== */
+.bio-hero {
+    margin-top: 75px;
+    background: #191E29;
+    padding: 30px 20px 20px;
+    text-align: center;
+}
+
+.bio-hero-inner {
+    position: relative;
+    z-index: 1;
+}
+
+.bio-hero h1 {
+    color: #F2BF00;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.bio-hero p {
+    color: #00FF7F;
+    font-size: 1.1rem;
+    margin-top: 8px;
+}
+
+/* ===== BIO SECTIONS ===== */
+.bio-section {
+    padding: 55px 20px;
+}
+
+.bg-dark-alt {
+    background: #191E29;
+}
+
+/* ===== BIO TEXT CARD ===== */
+.bio-text-card {
+    background: #1e2840;
+    border-radius: 10px;
+    padding: 28px 30px;
+    border-left: 4px solid #00FF7F;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    height: 100%;
+}
+
+.bio-text-card p {
+    color: #e8e8e8;
+    font-size: 0.92rem;
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    padding: 0;
+}
+
+.bio-text-card p:last-child {
+    margin-bottom: 0;
+}
+
+.bio-section-title {
+    color: #00FF7F;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 255, 127, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ===== BIO IMAGES ===== */
+.bio-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 14px;
+    border: 2px solid rgba(0, 255, 127, 0.35);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bio-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 36px rgba(0, 255, 127, 0.15);
+}
+
+.bio-img-sm {
+    height: 220px;
+}
+
+.bio-img-tall {
+    height: 380px;
+}
+
+.bio-img-md {
+    height: 280px;
+}
+
+.bio-img-rotate-wrap {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 14px;
+    border: 2px solid rgba(0, 255, 127, 0.35);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bio-img-rotate-wrap:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 36px rgba(0, 255, 127, 0.15);
+}
+
+.bio-img-rotated {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 280px;
+    height: 700px;
+    object-fit: cover;
+    object-position: center center;
+    transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+/* ===== ACHIEVEMENT CARDS ===== */
+.achievement-mini-card {
+    background: #141c28;
+    border-radius: 10px;
+    padding: 20px 16px;
+    text-align: center;
+    border-top: 3px solid #F2BF00;
+    height: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.achievement-mini-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(242, 191, 0, 0.2);
+}
+
+.achievement-mini-card i {
+    font-size: 2rem;
+    color: #F2BF00;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.achievement-mini-card h4 {
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.achievement-mini-card p {
+    color: #aab8cc;
+    font-size: 0.92rem;
+    margin: 0;
+    line-height: 1.5;
+    padding: 0;
+}
+
+/* ===== TIMELINE LINE ===== */
+.timeline-connector {
+    display: none;
+}
+
+/* ===== SECTION TAGS ===== */
+.section-tag {
+    display: inline-block;
+    background: #00FF7F;
+    color: #0a1020;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+/* ===== CONCLUSION SECTION ===== */
+.bio-conclusion {
+    padding: 60px 20px;
+    background: #191E29;
+}
+
+.conclusion-wrapper {
+    background: #1a2535;
+    border-radius: 12px;
+    padding: 40px 36px;
+    position: relative;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 255, 127, 0.15);
+}
+
+.conclusion-wrapper .paper-clip {
+    position: absolute;
+    top: -18px;
+    left: 36px;
+    font-size: 2.2rem;
+    transform: rotate(-15deg);
+}
+
+.conclusion-wrapper h2 {
+    color: #00FF7F;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    text-shadow: 0 0 15px rgba(0, 255, 127, 0.4);
+}
+
+.conclusion-wrapper p {
+    color: #d8e8e0;
+    font-size: 0.93rem;
+    text-align: justify;
+    line-height: 1.85;
+    margin-bottom: 18px;
+    padding: 0;
+    padding-left: 14px;
+    border-left: 3px solid rgba(0, 255, 127, 0.25);
+}
+
+.conclusion-wrapper p:last-child {
+    margin-bottom: 0;
+}
+
+/* ===== REFLECTION SECTION ===== */
+.bio-reflection {
+    padding: 60px 20px;
+    background: #191E29;
+}
+
+.bio-reflection h2 {
+    color: #F2BF00;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    text-shadow: 0 0 15px rgba(242, 191, 0, 0.4);
+}
+
+.quotes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.quotes-grid .quote-card:last-child:nth-child(3n+1) {
+    grid-column: 2 / 3;
+}
+
+@media (max-width: 768px) {
+    .quotes-grid {
+        grid-template-columns: 1fr;
+    }
+    .quotes-grid .quote-card:last-child:nth-child(3n+1) {
+        grid-column: auto;
+    }
+}
+
+.quote-card {
+    background: #1a2035;
+    border-radius: 10px;
+    padding: 24px 22px;
+    border-top: 3px solid #F2BF00;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.quote-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(242, 191, 0, 0.15);
+}
+
+.quote-card i {
+    color: #F2BF00;
+    font-size: 1.5rem;
+    opacity: 0.7;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.quote-card p {
+    color: #e0e0e0;
+    font-size: 0.88rem;
+    line-height: 1.7;
+    text-align: justify;
+    margin: 0 0 14px 0;
+    padding: 0;
+    font-style: italic;
+}
+
+.quote-source {
+    color: #F2BF00;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: block;
+    text-align: right;
+}
+
+/* ===== PSALM SECTION ===== */
+.bio-psalm {
+    padding: 50px 20px;
+    background: #191E29;
+}
+
+.psalm-card {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+    background: #1a2535;
+    border-radius: 12px;
+    padding: 40px 36px;
+    border: 1px solid rgba(242, 191, 0, 0.2);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+}
+
+.psalm-icon {
+    font-size: 2rem;
+    color: #F2BF00;
+    margin-bottom: 20px;
+    display: block;
+    opacity: 0.8;
+}
+
+.psalm-card p {
+    color: #e8dfc0;
+    font-size: 1rem;
+    line-height: 1.9;
+    font-style: italic;
+    margin-bottom: 16px;
+    padding: 0;
+}
+
+.psalm-card p:last-of-type {
+    margin-bottom: 20px;
+}
+
+.psalm-source {
+    display: block;
+    color: #F2BF00;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ===== FOOTER ===== */
+.footer-container {
+    padding-top: 50px;
+}
+
+.text-center {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #191E29;
+    border-top: 1px solid #00FF7F;
+    color: #F2BF00;
+    text-align: center;
+    padding: 0;
+    padding-top: 20px;
+    font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
+    font-size: 16px;
+}
+
+.text-body {
+    color: #fff !important;
+    font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
+    font-size: 16px;
+}
+
+/* Asegurar que todas las imágenes sean responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Excepciones para imágenes con tamaños específicos */
+#dacc {
+    width: 120px;
+    height: 42px;
+    padding: 5px;
+    object-fit: contain;
+}
+
+#menu {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 576px) {
+    .bio-hero h1 {
+        font-size: 32px;
+        letter-spacing: 1px;
+    }
+
+    .conclusion-wrapper h2, .bio-reflection h2 {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+    }
+
+    .bio-text-card {
+        padding: 20px 18px;
+        margin: 10px;
+    }
+
+    .bio-img {
+        height: 200px;
+    }
+
+    .bio-img-tall {
+        height: 250px;
+    }
+
+    .bio-img-rotate-wrap {
+        height: 200px;
+    }
+
+    .bio-img-rotated {
+        width: 200px;
+        height: 500px;
+    }
+
+    .quote-card {
+        padding: 16px 18px;
+        margin: 10px;
+    }
+
+    .psalm-card {
+        padding: 25px 20px;
+        margin: 10px;
+    }
+
+    /* Ajustar padding del body para footer fijo */
+    body {
+        padding-bottom: 60px;
+    }
+}

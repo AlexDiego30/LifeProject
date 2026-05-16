@@ -1,0 +1,251 @@
+
+*{
+    font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
+}
+
+
+body {
+    background: #191E29;
+    padding-bottom: 80px;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background-color: #191E29;
+    border-bottom: 1px solid #00FF7F;
+    transition: background-color 0.3s ease, border-bottom 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar:hover {
+    background-color: #191E29;
+    border-bottom: 1px solid #00FF7F;
+}
+
+.navbar-nav {
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        background-color: #191E29;
+        padding: 12px 0;
+        margin-top: 4px;
+        border-top: 1px solid rgba(0, 255, 127, 0.3);
+        border-radius: 0 0 10px 10px;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid rgba(0, 255, 127, 0.1);
+    }
+
+    .nav-item:last-child {
+        border-bottom: none;
+    }
+
+    #nav-link {
+        display: block;
+        padding: 10px 24px !important;
+        font-size: 1rem;
+    }
+
+    #nav-link:hover {
+        color: #ffffff;
+        background-color: rgba(0, 255, 127, 0.08);
+        padding-left: 30px !important;
+        transition: padding-left 0.2s ease;
+    }
+}
+
+
+#dacc {
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+}
+
+#nav-link {
+    color: #00FF7F;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#nav-link:hover {
+    color: #ffffff;
+}
+
+#menu {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+
+
+}
+
+button.navbar-toggler {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+button.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.mi {
+    font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
+    font-size: 60px;
+    color: #F2BF00;
+    text-align: center;
+}
+
+.robot {
+    width: 500px;
+    height: 500px;
+    max-width: 100%;
+}
+
+p {
+    text-align: justify;
+    color: #fff;
+    font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
+    margin: 20px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.green {
+    color: #00FF7F;
+}
+
+.list-group-item {
+    color: #fff;
+    font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.datos {
+    color: #F2BF00;
+    font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
+    font-size: 20px;
+}
+
+h3 {
+    color: #00FF7F;
+    font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
+    font-size: 25px;
+}
+
+.progra {
+    color: #191E29;
+    background-color: #00FF7F;
+    border-radius: 5px;
+    padding: 1px 6px;
+}
+
+.hobbies {
+    height: 150px;
+    width: 150px;
+    background-color: #132d46;
+    border-radius: 20%;
+    color: #fff;
+    font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border: 3px solid #00FF7F;
+}
+
+.img-hobbies {
+    width: 100px;
+    height: 100px;
+}
+
+.list-group-item {
+    text-align: justify;
+}
+
+.vita {
+    width: 225px;
+    height: 225px;
+}
+
+.list {
+    color: #fff;
+    font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
+    font-size: 18px;
+}
+
+.footer-container{
+    padding-top: 50px;
+}
+
+.text-center {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #191E29;
+    border-top: 1px solid #00FF7F;
+    color: #F2BF00;
+    text-align: center;
+    padding: 0;
+    padding-top: 20px;
+    font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
+    font-size: 16px;
+
+}
+
+
+.text-body {
+    color: #fff !important;
+    font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
+    font-size: 16px;
+}
+
+/* Asegurar que todas las imágenes sean responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Excepciones para imágenes con tamaños específicos */
+#dacc {
+    width: 120px;
+    height: 42px;
+    padding: 5px;
+    object-fit: contain;
+}
+
+#menu {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 576px) {
+    .mi {
+        font-size: 32px;
+    }
+
+    .hobbies {
+        width: 155px;
+        height: 155px;
+        margin: 8px auto;
+    }
+
+    /* Ajustar padding del body para footer fijo */
+    body {
+        padding-bottom: 60px;
+    }
+}

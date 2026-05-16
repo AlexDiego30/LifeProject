@@ -1,0 +1,240 @@
+*{
+    font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
+}
+
+
+body {
+    background: #191E29;
+    padding-bottom: 80px;
+}
+
+.mi {
+    font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
+    font-size: 60px;
+    color: #F2BF00;
+    text-align: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background-color: #191E29;
+    border-bottom: 1px solid #00FF7F;
+    transition: background-color 0.3s ease, border-bottom 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar:hover {
+    background-color: #191E29;
+    border-bottom: 1px solid #00FF7F;
+}
+
+.navbar-nav {
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        background-color: #191E29;
+        padding: 12px 0;
+        margin-top: 4px;
+        border-top: 1px solid rgba(0, 255, 127, 0.3);
+        border-radius: 0 0 10px 10px;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid rgba(0, 255, 127, 0.1);
+    }
+
+    .nav-item:last-child {
+        border-bottom: none;
+    }
+
+    #nav-link {
+        display: block;
+        padding: 10px 24px !important;
+        font-size: 1rem;
+    }
+
+    #nav-link:hover {
+        color: #ffffff;
+        background-color: rgba(0, 255, 127, 0.08);
+        padding-left: 30px !important;
+        transition: padding-left 0.2s ease;
+    }
+}
+
+
+#dacc {
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+}
+
+#nav-link {
+    color: #00FF7F;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+#nav-link:hover {
+    color: #ffffff;
+}
+
+#menu {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+}
+
+button.navbar-toggler {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+button.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.container-foda {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.card-foda {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+    margin: 20px 0;
+    border-radius: 15px;
+    padding: 20px;
+    background: linear-gradient(135deg, #222a38, #191E29); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    text-align: center;
+    color: #F2BF00;
+    font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
+    min-height: 250px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.card-foda:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ff7f, 0 0 25px #00FF7F, 0 0 35px #00ff7f; 
+    border: 2px solid #01C360;
+}
+
+
+.card-foda .card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00FF7F; 
+    transition: color 0.3s ease-in-out;
+    padding: 10px;
+}
+
+
+.card-foda:hover .card-title {
+    color: #F2BF00;
+}
+
+
+.card-foda .card-text {
+    font-size: 1.2rem;
+    color: #ffffff;
+    line-height: 1.6;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Cambio de opacidad en hover */
+.card-foda:hover .card-text {
+    opacity: 0.9;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+
+
+.footer-container{
+    padding-top: 50px;
+}
+
+.text-center {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #191E29;
+    border-top: 1px solid #00FF7F;
+    color: #F2BF00;
+    text-align: center;
+    padding: 0;
+    padding-top: 20px;
+    font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
+    font-size: 16px;
+}
+
+.text-body {
+    color: #fff !important;
+    font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
+    font-size: 16px;
+}
+
+/* Asegurar que todas las imágenes sean responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Excepciones para imágenes con tamaños específicos */
+#dacc {
+    width: 120px;
+    height: 42px;
+    padding: 5px;
+    object-fit: contain;
+}
+
+#menu {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 576px) {
+    .mi {
+        font-size: 32px;
+    }
+
+    .card-foda {
+        margin: 15px 10px;
+        padding: 15px;
+        min-height: 200px;
+    }
+
+    .card-foda .card-title {
+        font-size: 1.4rem;
+    }
+
+    .card-foda .card-text {
+        font-size: 1rem;
+    }
+
+    /* Ajustar padding del body para footer fijo */
+    body {
+        padding-bottom: 60px;
+    }
+}
