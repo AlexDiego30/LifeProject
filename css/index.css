@@ -100,30 +100,41 @@ button.navbar-toggler:focus {
 }
 
 .inicio {
-    background-image:
-        linear-gradient(rgba(25, 30, 41, 0.25), rgba(25, 30, 41, 0.25)),
+    background:
+        linear-gradient(
+            rgba(25, 30, 41, 0.45),
+            rgba(25, 30, 41, 0.45)
+        ),
         url('../img/fondo2.jpg');
 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    width: 100%; 
-    height: 800px;
-    color: #fff;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: 100vh;
+
     display: flex;
+    justify-content: center;
     align-items: center;
+
+    color: #fff;
+    padding: 100px 20px 60px;
+    overflow: hidden;
 }
 
 
 
 .inicio .contenido-banner {
-    padding: 20px;
-    background-color: #191E29;
+    padding: 25px;
+    background: rgba(25, 30, 41, 0.82);
+    backdrop-filter: blur(10px);
+
     max-width: 350px;
-    margin: auto;
+    width: 90%;
+
     text-align: center;
-    border-radius: 40px;
-    font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
+    border-radius: 30px;
 }
 
 .yo {
